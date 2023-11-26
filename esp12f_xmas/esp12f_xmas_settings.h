@@ -11,9 +11,9 @@
 
 //MQTT SETTINGS
 
-#define MQTT_BROKER_IP 192,168,1,8
+// #define MQTT_BROKER_IP 
 #define MQTT_PORT 1883
-IPAddress mqttServer(MQTT_BROKER_IP);
+#define MQTT_HOSTNAME "homeassistant.local"
 
 
 #define MQTT_DEVICE_ID "remoteController"

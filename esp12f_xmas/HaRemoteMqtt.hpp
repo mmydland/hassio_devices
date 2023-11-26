@@ -71,7 +71,7 @@ public:
 HaRemoteMqtt::HaRemoteMqtt(WiFiClient &wifi_client)
 {
   pubsub_client = PubSubClient(wifi_client);
-  pubsub_client.setServer(mqttServer, MQTT_PORT);
+  pubsub_client.setServer(MQTT_HOSTNAME, MQTT_PORT);
   pubsub_client.setCallback(callback);
 }
 
